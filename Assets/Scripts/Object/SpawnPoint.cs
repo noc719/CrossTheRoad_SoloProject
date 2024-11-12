@@ -2,7 +2,7 @@
 
 public class SpawnPoint : MonoBehaviour
 {
-    public Transform startPoint = null;
+    public Transform startPoint = null; //빈 오브젝트를 두고 해당 지점에 소환시킬 것
 
     [Header("Delay")]
     public float minSpawnDelay = 1f; //소환 쿨타임
@@ -49,7 +49,7 @@ public class SpawnPoint : MonoBehaviour
 
         if (!isPlacement)
         {
-            obj.GetComponent<Mover>().speed = speed;
+            //obj.GetComponent<Mover>().speed = speed;
             obj.transform.rotation = obj.transform.rotation * Quaternion.Euler(new Vector3(0, direction, 0));
             //좌우 여부에 따라 오브젝트의 방향 조정
         }
