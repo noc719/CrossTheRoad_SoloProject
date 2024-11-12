@@ -16,7 +16,8 @@ public class PlayerController : MonoBehaviour
 
     private void Move(Vector3 input)
     {
-        rb.velocity = input; 
+        Vector3 moveInput = input.normalized * moveDistance;
+        rb.velocity = moveInput; 
     }
 
     public void MoveInput(InputAction.CallbackContext context)

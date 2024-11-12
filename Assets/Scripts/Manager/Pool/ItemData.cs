@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class ItemData : MonoBehaviour 
+public class ItemData : MonoBehaviour
 {
     public int id;
     public GameObject prefab;

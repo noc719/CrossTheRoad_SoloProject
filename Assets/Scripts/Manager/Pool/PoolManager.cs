@@ -49,7 +49,6 @@ public class PoolManager : Manager<PoolManager>
 
     public void ReturnObject(GameObject obj, int id)
     {
-
         if (!Pool.ContainsKey(id)) return; //딕셔너리에 키가 없다면 반환
         obj.SetActive(false);
         Pool[id].Enqueue(obj);
