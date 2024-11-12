@@ -14,9 +14,9 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody>();
     }
 
-    private void Move(Vector3 value)
+    private void Move(Vector3 input)
     {
-        rb.velocity = value;
+        rb.velocity = input; 
     }
 
     public void MoveInput(InputAction.CallbackContext context)
@@ -29,8 +29,7 @@ public class PlayerController : MonoBehaviour
         {
             if (moveInput.magnitude == 0f) // 입력받는 값이 없을 때
             {
-                //해당방향으로 움직이고 다시 초기화해야함
-                Move(transform.position + moveValue);
+                Move(moveValue); //Fixed Update에 집어넣을 경우 지속적으로 속력을 더하므로 트리거를 두는게 맞는 것 같다.
                 moveValue = Vector3.zero; //움직이고나서 다시 변수를 초기화
                 Debug.Log("Input종료");
             }
