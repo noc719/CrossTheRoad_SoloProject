@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class SpwanPoint : MonoBehaviour
+public class SpawnPoint : MonoBehaviour
 {
     public Transform startPoint;
 

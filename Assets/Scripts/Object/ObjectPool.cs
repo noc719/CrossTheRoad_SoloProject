@@ -35,7 +35,7 @@ public class ObjectPool : MonoBehaviour
         }
     }
 
-    public GameObject SpwanObject(string name)
+    public GameObject SpawnObject(string name)
     {
         if(!Pool.ContainsKey(name)) return null; //해당 키가 없을 경우 null반환
 
@@ -69,6 +69,4 @@ public class ObjectPool : MonoBehaviour
             Destroy(obj); //오브젝트를 제거
         }
     }
-
-
 }
