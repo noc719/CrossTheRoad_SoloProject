@@ -2,7 +2,7 @@
 using UnityEngine;
 public class MovingObjectsManager : Manager<MovingObjectsManager>
 {
-    public List<Objects> data;
+    public List<MovingObjects> data;
     public Dictionary<int, Queue<GameObject>> Pool;
 
     private void Awake()
@@ -22,7 +22,7 @@ public class MovingObjectsManager : Manager<MovingObjectsManager>
                 obj.SetActive(false);
                 objectPool.Enqueue(obj);
             }
-            Pool.Add(pool.objectSO.ItemId, objectPool);
+            Pool.Add(pool.objectSO.MoveObjectId, objectPool);
         }
     }
 
@@ -38,7 +38,7 @@ public class MovingObjectsManager : Manager<MovingObjectsManager>
         }
         else //큐가 비어있다면
         {
-            Objects poolData = data.Find(n => n.objectSO.ItemId == id); //리스트에서 이름이 동일한 데이터를 받아옴
+            MovingObjects poolData = data.Find(n => n.objectSO.MoveObjectId == id); //리스트에서 이름이 동일한 데이터를 받아옴
 
             GameObject newObj = Instantiate(poolData.objectSO.prefab,this.transform); // 새로 오브젝트를 생성
             newObj.SetActive(false); //오브젝트를 비활성화

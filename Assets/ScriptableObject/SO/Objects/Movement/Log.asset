@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c527004428f032245af0cad1541e82d4, type: 3}
-  m_Name: Train_Large
+  m_Name: Log
   m_EditorClassIdentifier: 
-  itemId: 1
-  prefab: {fileID: 192736, guid: e75094eefb6155e4da6b487307f7463c, type: 3}
-  speed: 10
+  moveObjectId: 2
+  prefab: {fileID: 198646, guid: 0ef6331534c4efe4aaa71fc281285347, type: 3}
+  speed: 1

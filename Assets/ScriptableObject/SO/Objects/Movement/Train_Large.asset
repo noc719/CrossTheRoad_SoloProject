@@ -9,8 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 207dd8572da94354984e3e6fd180f005, type: 3}
-  m_Name: RoadOne
+  m_Script: {fileID: 11500000, guid: c527004428f032245af0cad1541e82d4, type: 3}
+  m_Name: Train_Large
   m_EditorClassIdentifier: 
-  placementId: 1
-  prefab: {fileID: 160302, guid: 73c5604e817fc0a44a46505ca4499d3a, type: 3}
+  moveObjectId: 1
+  prefab: {fileID: 192736, guid: e75094eefb6155e4da6b487307f7463c, type: 3}
+  speed: 10

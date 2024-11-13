@@ -114,7 +114,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startPoint: {fileID: 442266}
-  spawnData: {fileID: 6073616213246117421, guid: 0ef6331534c4efe4aaa71fc281285347, type: 3}
+  spawnData: {fileID: 4291957534356643221, guid: 0ef6331534c4efe4aaa71fc281285347, type: 3}
   spawnDelayMin: 2
   spawnDelayMax: 5
   Edirection: 0
@@ -164,7 +164,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startPoint: {fileID: 463966}
-  spawnData: {fileID: 6073616213246117421, guid: 0ef6331534c4efe4aaa71fc281285347, type: 3}
+  spawnData: {fileID: 4291957534356643221, guid: 0ef6331534c4efe4aaa71fc281285347, type: 3}
   spawnDelayMin: 2
   spawnDelayMax: 5
   Edirection: 1
@@ -214,7 +214,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startPoint: {fileID: 463250}
-  spawnData: {fileID: 6073616213246117421, guid: 0ef6331534c4efe4aaa71fc281285347, type: 3}
+  spawnData: {fileID: 4291957534356643221, guid: 0ef6331534c4efe4aaa71fc281285347, type: 3}
   spawnDelayMin: 2
   spawnDelayMax: 5
   Edirection: 0
@@ -264,7 +264,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startPoint: {fileID: 427758}
-  spawnData: {fileID: 6073616213246117421, guid: 0ef6331534c4efe4aaa71fc281285347, type: 3}
+  spawnData: {fileID: 4291957534356643221, guid: 0ef6331534c4efe4aaa71fc281285347, type: 3}
   spawnDelayMin: 2
   spawnDelayMax: 5
   Edirection: 1

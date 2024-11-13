@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2621212137267950081}
   - component: {fileID: 5404377840282412571}
   - component: {fileID: 8195895542498613376}
+  - component: {fileID: 3417724508244481658}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -66,7 +67,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3399597399374272094}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 20
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -80,7 +81,7 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
+  m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -143,7 +144,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 305288e9c9ecab94f86a790cd74f333c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shape: {fileID: 6260854615594305320}
   moveDistance: 5
+--- !u!114 &3417724508244481658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3399597399374272094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0ec16f39c909d34db59af69d42d0c95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 0}
+  playerTransform: {fileID: 0}
 --- !u!1 &8396145618244394676
 GameObject:
   m_ObjectHideFlags: 0

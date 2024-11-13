@@ -1,4 +1,5 @@
-﻿using Unity.VisualScripting;
+﻿using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 [System.Serializable]
@@ -12,7 +13,7 @@ public class SpawnPoint : MonoBehaviour
 {
     public Transform startPoint = null; //빈 오브젝트를 두고 해당 지점에 소환시킬 것
 
-    public Objects spawnData = null; //오브젝트 풀에서 가져올 
+    public MovingObjects spawnData = null; //오브젝트 풀에서 가져올 
 
     [Header("SpawnDelay")]
     public float spawnDelayMin = 1f; //소환에 걸리는 시간
@@ -42,7 +43,7 @@ public class SpawnPoint : MonoBehaviour
 
     private void SpawnItem()
     {
-        GameObject obj = MovingObjectsManager.Instance.SpawnObject(spawnData.objectSO.ItemId);
+        GameObject obj = MovingObjectsManager.Instance.SpawnObject(spawnData.objectSO.MoveObjectId);
         obj.GetComponent<Movement>().speed = spawnData.objectSO.Speed;
         obj.transform.rotation = obj.transform.rotation * Quaternion.Euler(0, direction, 0);
         obj.transform.position = transform.position;

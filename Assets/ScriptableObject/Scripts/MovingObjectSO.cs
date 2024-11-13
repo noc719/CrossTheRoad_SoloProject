@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "ObjectSO", menuName = "Objects", order = 0)]
-public class ObjectSO : ScriptableObject
+[CreateAssetMenu(fileName = "MovingObjectSO", menuName = "MovingObjects", order = 0)]
+public class MovingObjectSO : ScriptableObject
 {
     [Header("ItemInfo")]
 
     [SerializeField]
-    private int itemId;
-    public int ItemId { get { return itemId; } set { itemId = value; } }
+    private int moveObjectId;
+    public int MoveObjectId { get { return moveObjectId; } set { moveObjectId = value; } }
 
     public GameObject prefab;
 

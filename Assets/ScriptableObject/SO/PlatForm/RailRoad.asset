@@ -12,6 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 207dd8572da94354984e3e6fd180f005, type: 3}
   m_Name: RailRoad
   m_EditorClassIdentifier: 
-  platformId: 2
+  placementId: 2
   prefab: {fileID: 135800, guid: 82d9c4adfc0d40b49ad4a7dd0b298b9a, type: 3}
-  width: {x: 0, y: 0, z: 1}

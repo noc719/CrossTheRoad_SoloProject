@@ -19,8 +19,8 @@ public class SpawnController : MonoBehaviour
     {
         for (int i = 0; i < spawnPoints.Count; i++)
         {
-            spawnPoints[i].leftPoint.enabled = false;
-            spawnPoints[i].rightPoint.enabled = false;
+            spawnPoints[i].leftPoint.gameObject.SetActive(false);
+            spawnPoints[i].rightPoint.gameObject.SetActive(false);
         }
 
         DecideDirection();
@@ -35,9 +35,9 @@ public class SpawnController : MonoBehaviour
             switch (eDirection)
             {
                 case EDirection.left:
-                    spawnPoints[i].leftPoint.enabled = true; break;
+                    spawnPoints[i].leftPoint.gameObject.SetActive(true); break;
                 case EDirection.right:
-                    spawnPoints[i].rightPoint.enabled = true; break;
+                    spawnPoints[i].rightPoint.gameObject.SetActive(true); break;
             }
         }
         

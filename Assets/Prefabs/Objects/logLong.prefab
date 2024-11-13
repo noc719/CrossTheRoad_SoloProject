@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 497774}
   - component: {fileID: 6514000}
   - component: {fileID: -285802257768453856}
-  - component: {fileID: 6073616213246117421}
+  - component: {fileID: 4291957534356643221}
   m_Layer: 0
   m_Name: logLong
   m_TagString: Untagged
@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
---- !u!114 &6073616213246117421
+--- !u!114 &4291957534356643221
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -161,7 +161,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 198646}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3c5ebbb4714dfc4280df555ae0f998d, type: 3}
+  m_Script: {fileID: 11500000, guid: e4eec9c1e9ff1224ba0d6f442c81cd8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   objectSO: {fileID: 11400000, guid: f40c21557e0c3d5479785c7ee3832b0c, type: 2}

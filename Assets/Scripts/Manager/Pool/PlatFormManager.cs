@@ -9,13 +9,14 @@ public class PlatFormManager : Manager<PlatFormManager>
 
     private float lastPos = 0;
     private float lastScale = 0;
+    private float distance = 20f;
 
     private void Start()
     {
         SetPool(); // 사용할 플랫폼 생성
 
-        SpawnFromPool(0); //시작하는 지점은 초원으로
-        for (int i = 0; i < 6; i++) //초기 지형을 생성해줌
+        SpawnFromPool(0); //시작하는 지점은 항상 초원으로
+        for (int i = 0; i < 30; i++) //초기 지형을 생성해줌
         {
             SpawnFromPool(DecidePlatForm());
         }
@@ -23,7 +24,10 @@ public class PlatFormManager : Manager<PlatFormManager>
 
     private void Update()
     {
-        
+        if(lastPos -CharacterManager.Instance.Player.transform.position.z < distance)
+        {
+            SpawnFromPool(DecidePlatForm());
+        }
     }
 
     private void SpawnFromPool(int num)
@@ -45,13 +49,13 @@ public class PlatFormManager : Manager<PlatFormManager>
         foreach(var data in platForms)
         {
             Queue<GameObject> queue = new Queue<GameObject>();
-            for(int i = 0; i <2; i++)
+            for(int i = 0; i <10; i++)
             {
                 GameObject obj = Instantiate(data.platFormSO.prefab, this.transform);
                 obj.SetActive(false);
                 queue.Enqueue(obj);
             }
-            platformsDict.Add(data.platFormSO.platformId, queue);
+            platformsDict.Add(data.platFormSO.PlacementId, queue);
         }
     }
 
@@ -67,7 +71,7 @@ public class PlatFormManager : Manager<PlatFormManager>
         }
         else
         {
-            PlatForm platForm = platForms.Find(n => n.platFormSO.platformId == key);
+            PlatForm platForm = platForms.Find(n => n.platFormSO.PlacementId == key);
             GameObject obj = Instantiate(platForm.platFormSO.prefab,this.transform);
             obj.SetActive(false);
             return obj;

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3390908}
   - component: {fileID: 2324382}
   - component: {fileID: 6521336}
-  - component: {fileID: 5199948153739786685}
+  - component: {fileID: 7776479889027559977}
   m_Layer: 0
   m_Name: treemedium
   m_TagString: collider
@@ -106,7 +106,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.1605911, y: 0.3286562, z: 0.16059121}
   m_Center: {x: 0.0024733506, y: 0.1673651, z: 0.0284896}
---- !u!114 &5199948153739786685
+--- !u!114 &7776479889027559977
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -115,8 +115,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 104532}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5173d3b27a8d534d8650aa0aa57b2e9, type: 3}
+  m_Script: {fileID: 11500000, guid: 7e854b4cec1aa984eb7c88d057086859, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: 24
-  prefab: {fileID: 104532}
+  placementSO: {fileID: 11400000, guid: fbe4585475cd59a428a9e269b1700432, type: 2}
+  maxAmount: 3
