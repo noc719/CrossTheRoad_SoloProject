@@ -5,6 +5,7 @@ public class PlayerController : MonoBehaviour
 {
     private Vector3 moveValue;
     private Rigidbody rb;
+    public Transform shape;
 
     public float moveDistance = 5 ; //움직일 거리
 
@@ -17,7 +18,12 @@ public class PlayerController : MonoBehaviour
     private void Move(Vector3 input)
     {
         Vector3 moveInput = input.normalized * moveDistance;
-        rb.velocity = moveInput; 
+        rb.velocity = moveInput;  //에셋이 아닌 직접 구현을 해보고 싶었는데 좀 더 고민해보야할 것 같다. 
+    }
+
+    private void Rotate(Vector3 input)
+    {
+        transform.rotation = Quaternion.Euler(270, input.x * 90, 0);  //x 축을 돌리면 위 아래 y축을 돌리면 왼쪽 오른쪽을 회전 시킨다. 
     }
 
     public void MoveInput(InputAction.CallbackContext context)
@@ -31,6 +37,7 @@ public class PlayerController : MonoBehaviour
             if (moveInput.magnitude == 0f) // 입력받는 값이 없을 때
             {
                 Move(moveValue); //Fixed Update에 집어넣을 경우 지속적으로 속력을 더하므로 트리거를 두는게 맞는 것 같다.
+                Rotate(moveInput);
                 moveValue = Vector3.zero; //움직이고나서 다시 변수를 초기화
                 Debug.Log("Input종료");
             }

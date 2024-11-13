@@ -9,5 +9,4 @@ public class PlatFormSO : ScriptableObject
 
     public GameObject prefab;
 
-    public Vector3 width;
 }

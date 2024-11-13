@@ -6,15 +6,18 @@ public class PlatFormManager : Manager<PlatFormManager>
 {
     public List<PlatForm> platForms;
     public Dictionary<int, Queue<GameObject>> platformsDict;
-    private Vector3 spawnPoint = Vector3.zero;
+
+    private float lastPos = 0;
+    private float lastScale = 0;
 
     private void Start()
     {
         SetPool(); // 사용할 플랫폼 생성
 
+        SpawnFromPool(0); //시작하는 지점은 초원으로
         for (int i = 0; i < 6; i++) //초기 지형을 생성해줌
         {
-            SpawnFromPool();
+            SpawnFromPool(DecidePlatForm());
         }
     }
 
@@ -23,12 +26,15 @@ public class PlatFormManager : Manager<PlatFormManager>
         
     }
 
-    private void SpawnFromPool()
+    private void SpawnFromPool(int num)
     {
-        int randomNumber = DecidePlatForm(); //랜덤한 플랫폼을 생성하기위해 난수 로직을 돌림
-        GameObject obj = CreatePlatForm(randomNumber);  //생성할 플랫폼
-        obj.transform.position = spawnPoint; //오브젝트가 생성될 지점을 정해줌
-        spawnPoint += Vector3.forward; //spawnPoint를 플랫폼이 차지하는 만큼 앞으로 당김
+        GameObject obj = CreatePlatForm(num);  
+        float offset = lastPos + (lastScale * 0.5f); // 오브젝트의 중심점에서 반을 더 가야 가장자리가 나오게된다. 따라서 z축방향으로 마지막 오브젝트의 절반만큼 일단 거리를 벌려준 것
+        offset += (obj.transform.localScale.z) * 0.5f; //현재 오브젝트 또한 중심점까지 반을 더 가야한다. 차지하는 공간을 생각하였을 때 z축의 방향으로 scale의 절반만큼 더 거리를 벌린 것
+        obj.transform.position = new Vector3(0,0,offset); //위에서 거리를 벌린만큼의 값을 안에 집어넣어준다. 
+        lastPos = obj.transform.position.z; //마지막 지점은 다시 이 오브젝트가 현재 위치한 좌표로 설정하여주고
+        lastScale = obj.transform.localScale.z;//lastScale에도 이 오브젝트의 z scale 값으로 초기화해준다
+
         obj.SetActive(true);
     }
 
