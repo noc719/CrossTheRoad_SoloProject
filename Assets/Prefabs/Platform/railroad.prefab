@@ -725,6 +725,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 463986}
+  - component: {fileID: 102916382911574136}
   m_Layer: 0
   m_Name: spawnController
   m_TagString: Untagged
@@ -749,6 +750,20 @@ Transform:
   - {fileID: 440820}
   m_Father: {fileID: 409302}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &102916382911574136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 143110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36294e26107fad74db697a553d5acc5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftPoint: {fileID: 2272330504082105633}
+  rightPoint: {fileID: 7109035183174552363}
 --- !u!1 &143806
 GameObject:
   m_ObjectHideFlags: 0
@@ -980,13 +995,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 407262}
+  - component: {fileID: 2272330504082105633}
   m_Layer: 0
   m_Name: spawnLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &407262
 Transform:
   m_ObjectHideFlags: 0
@@ -1002,6 +1018,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 463986}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2272330504082105633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 161618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c8e9dc5e80b6c343b807e9f838bdc1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startPoint: {fileID: 407262}
+  spawnData: {fileID: 9086970351270796684, guid: e75094eefb6155e4da6b487307f7463c, type: 3}
+  spawnDelayMin: 1
+  spawnDelayMax: 4
+  Edirection: 0
+  spawnCount: 3
 --- !u!1 &164764
 GameObject:
   m_ObjectHideFlags: 0
@@ -1471,13 +1505,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 440820}
+  - component: {fileID: 7109035183174552363}
   m_Layer: 0
   m_Name: spawnRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &440820
 Transform:
   m_ObjectHideFlags: 0
@@ -1493,6 +1528,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 463986}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7109035183174552363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 186720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c8e9dc5e80b6c343b807e9f838bdc1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startPoint: {fileID: 440820}
+  spawnData: {fileID: 9086970351270796684, guid: e75094eefb6155e4da6b487307f7463c, type: 3}
+  spawnDelayMin: 1
+  spawnDelayMax: 4
+  Edirection: 1
+  spawnCount: 3
 --- !u!1 &193030
 GameObject:
   m_ObjectHideFlags: 0

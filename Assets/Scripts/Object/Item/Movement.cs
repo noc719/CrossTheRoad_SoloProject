@@ -2,7 +2,7 @@
 
 public class Movement : MonoBehaviour
 {
-    public float speed = 1f;
+    [HideInInspector] public float speed = 1f;
 
     private void Start()
     {

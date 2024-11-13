@@ -342,6 +342,8 @@ GameObject:
   m_Component:
   - component: {fileID: 488542}
   - component: {fileID: 6540378}
+  - component: {fileID: 9086970351270796684}
+  - component: {fileID: 1198486710537170014}
   m_Layer: 0
   m_Name: traincar3
   m_TagString: train
@@ -389,3 +391,30 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 6.6748347, y: 0.65414083, z: 0.6275368}
   m_Center: {x: 2.3112385, y: 0.33255678, z: 0.0029559135}
+--- !u!114 &9086970351270796684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 192736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e854b4cec1aa984eb7c88d057086859, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ItemSO: {fileID: 11400000, guid: a910e11730948a440a8583b06ceed3f7, type: 2}
+  poolSize: 1
+--- !u!114 &1198486710537170014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 192736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e2072c94d938874dac15a4022d9b0cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
