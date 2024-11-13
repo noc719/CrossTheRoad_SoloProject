@@ -12,4 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 757a935156749c24c8fc815683b53455, type: 3}
   m_Name: Car
   m_EditorClassIdentifier: 
-  prefabs: {fileID: 0}
+  itemId: 0
+  speed: 5
+  direction: 0

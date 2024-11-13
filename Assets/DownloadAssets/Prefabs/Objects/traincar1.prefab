@@ -93,8 +93,6 @@ GameObject:
   m_Component:
   - component: {fileID: 444984}
   - component: {fileID: 6535132}
-  - component: {fileID: 11403120}
-  - component: {fileID: -4200229263765101629}
   m_Layer: 0
   m_Name: traincar1
   m_TagString: train
@@ -140,37 +138,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.3457375, y: 0.65414083, z: 0.6275368}
   m_Center: {x: 4.475787, y: 0.33255678, z: 0.0029559135}
---- !u!114 &11403120
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 176312}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 09bee381f8f0944e39fe1e257f8b641d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  moveDirection: 0
-  parentOnTrigger: 0
-  hitBoxOnTrigger: 1
-  moverObject: {fileID: 178432}
---- !u!114 &-4200229263765101629
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 176312}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5173d3b27a8d534d8650aa0aa57b2e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  id: 16
-  prefab: {fileID: 176312}
 --- !u!1 &178432
 GameObject:
   m_ObjectHideFlags: 0

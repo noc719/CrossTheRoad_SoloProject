@@ -6,8 +6,8 @@ using UnityEngine;
 public class ItemSO : ScriptableObject
 {
     [Header("ItemInfo")]
-    private string itemName;
-    public string ItemName { get { return name; } set { name = value; } }
+    [SerializeField]
+    private int itemId;
+    public int ItemId { get { return itemId; } set { itemId = value; } }
 
-    public GameObject prefabs;
 }

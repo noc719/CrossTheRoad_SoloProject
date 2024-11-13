@@ -93,8 +93,6 @@ GameObject:
   m_Component:
   - component: {fileID: 483882}
   - component: {fileID: 6597552}
-  - component: {fileID: 11493076}
-  - component: {fileID: -3047904165987823356}
   m_Layer: 0
   m_Name: truck
   m_TagString: Untagged
@@ -139,34 +137,3 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.0457335, y: 0.65414083, z: 0.6275368}
   m_Center: {x: -0.022639334, y: 0.33255678, z: 0.0029559135}
---- !u!114 &11493076
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 172972}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 09bee381f8f0944e39fe1e257f8b641d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  moveDirection: 0
-  parentOnTrigger: 0
-  hitBoxOnTrigger: 1
-  moverObject: {fileID: 151828}
---- !u!114 &-3047904165987823356
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 172972}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5173d3b27a8d534d8650aa0aa57b2e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  id: 26
-  prefab: {fileID: 172972}
