@@ -12,4 +12,10 @@ public class ItemSO : ScriptableObject
     public int ItemId { get { return itemId; } set { itemId = value; } }
 
     public GameObject prefab;
+
+    [Header("Movement")]
+
+    [SerializeField]
+    private float speed;
+    public float Speed { get { return speed; } set { speed = value; } }
 }

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 409178}
   - component: {fileID: 6526374}
   - component: {fileID: 1524000316701538464}
+  - component: {fileID: 5927893090961821886}
   m_Layer: 0
   m_Name: car_orange
   m_TagString: Untagged
@@ -67,8 +68,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e854b4cec1aa984eb7c88d057086859, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemSO: {fileID: 11400000, guid: 5086a815a6cf54a41bba87b5aebb403b, type: 2}
+  ItemSO: {fileID: 11400000, guid: 186cde8cf723b654993ea2edf20c33e9, type: 2}
   poolSize: 3
+--- !u!114 &5927893090961821886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 128730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e2072c94d938874dac15a4022d9b0cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
 --- !u!1 &168818
 GameObject:
   m_ObjectHideFlags: 0

@@ -43,7 +43,7 @@ public class SpawnPoint : MonoBehaviour
     private void SpawnItem()
     {
         GameObject obj = PoolManager.Instance.SpawnObject(spawnData.ItemSO.ItemId);
-
+        obj.GetComponent<Movement>().speed = spawnData.ItemSO.Speed;
         obj.transform.rotation = obj.transform.rotation * Quaternion.Euler(0, direction, 0);
         obj.transform.position = transform.position;
     }

@@ -28,7 +28,6 @@ public class PoolManager : Manager<PoolManager>
 
     public GameObject SpawnObject(int id)
     {
-        Debug.Log(id);
         if (!Pool.ContainsKey(id)) return null; //해당 키가 없을 경우 null반환
 
         if (Pool[id].Count > 0) //큐의 오브젝트가 0이 아니라면
