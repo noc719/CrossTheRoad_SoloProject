@@ -2,8 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "ItemSO", menuName = "Item", order = 0)]
-public class ItemSO : ScriptableObject
+[CreateAssetMenu(fileName = "ObjectSO", menuName = "Objects", order = 0)]
+public class ObjectSO : ScriptableObject
 {
     [Header("ItemInfo")]
 

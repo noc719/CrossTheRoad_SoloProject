@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 
-public class Item : MonoBehaviour
+public class Objects : MonoBehaviour
 {
-    public ItemSO ItemSO;
+    public ObjectSO objectSO;
 
     public int poolSize = 3;
 
@@ -10,7 +10,7 @@ public class Item : MonoBehaviour
     {
         if (transform.position.x < -25f || transform.position.x > 25f) //일정거리에 도달하면
         {
-            ItemManager.Instance.ReturnObject(gameObject, ItemSO.ItemId); //풀을 반환
+            MovingObjectsManager.Instance.ReturnObject(gameObject, objectSO.ItemId); //풀을 반환
         }
     }
 }
