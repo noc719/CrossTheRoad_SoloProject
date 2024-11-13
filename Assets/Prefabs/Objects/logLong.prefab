@@ -93,6 +93,8 @@ GameObject:
   m_Component:
   - component: {fileID: 497774}
   - component: {fileID: 6514000}
+  - component: {fileID: -285802257768453856}
+  - component: {fileID: 6073616213246117421}
   m_Layer: 0
   m_Name: logLong
   m_TagString: Untagged
@@ -137,3 +139,30 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.5, y: 0.5, z: 0.5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-285802257768453856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 198646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e2072c94d938874dac15a4022d9b0cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
+--- !u!114 &6073616213246117421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 198646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e854b4cec1aa984eb7c88d057086859, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ItemSO: {fileID: 11400000, guid: f40c21557e0c3d5479785c7ee3832b0c, type: 2}
+  poolSize: 6

@@ -23,7 +23,7 @@ public class SpawnPoint : MonoBehaviour
     public EDirection Edirection = EDirection.left;
     private float direction = 0;
 
-    public int spawnCount = 0;
+    public int spawnCount = 0; //계획 상 오브젝트풀에서 호출하는 제한을 걸어주려고 하였는데 일단 스폰주기로 임시조치
 
     private void Start()
     {
