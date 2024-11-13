@@ -2,7 +2,7 @@
 using UnityEngine;
 public class PoolManager : Manager<PoolManager>
 {
-    public List<ItemData> data;
+    public List<Item> data;
     public Dictionary<int, Queue<GameObject>> Pool;
 
     private void Awake()
@@ -16,18 +16,19 @@ public class PoolManager : Manager<PoolManager>
         foreach (var pool in data)
         {
             Queue<GameObject> objectPool = new Queue<GameObject>();
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < pool.poolSize; i++)
             {
-                GameObject obj = Instantiate(pool.prefab);
+                GameObject obj = Instantiate(pool.ItemSO.prefab,this.transform);
                 obj.SetActive(false);
                 objectPool.Enqueue(obj);
             }
-            Pool.Add(pool.id, objectPool);
+            Pool.Add(pool.ItemSO.ItemId, objectPool);
         }
     }
 
     public GameObject SpawnObject(int id)
     {
+        Debug.Log(id);
         if (!Pool.ContainsKey(id)) return null; //해당 키가 없을 경우 null반환
 
         if (Pool[id].Count > 0) //큐의 오브젝트가 0이 아니라면
@@ -38,9 +39,9 @@ public class PoolManager : Manager<PoolManager>
         }
         else //큐가 비어있다면
         {
-            ItemData poolData = data.Find(n => n.id == id); //리스트에서 이름이 동일한 데이터를 받아옴
+            Item poolData = data.Find(n => n.ItemSO.ItemId == id); //리스트에서 이름이 동일한 데이터를 받아옴
 
-            GameObject newObj = Instantiate(poolData.prefab); // 새로 오브젝트를 생성
+            GameObject newObj = Instantiate(poolData.ItemSO.prefab,this.transform); // 새로 오브젝트를 생성
             newObj.SetActive(false); //오브젝트를 비활성화
             Pool[id].Enqueue(newObj); // 큐에 새로 생성한 오브젝트를 넣음
             return newObj; //해당 오브젝트를 반환

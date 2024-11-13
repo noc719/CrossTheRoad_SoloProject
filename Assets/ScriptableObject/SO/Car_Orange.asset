@@ -10,8 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 757a935156749c24c8fc815683b53455, type: 3}
-  m_Name: Car
+  m_Name: Car_Orange
   m_EditorClassIdentifier: 
   itemId: 0
+  prefab: {fileID: 128730, guid: 39a7e941a64fb034caae3c6c80804ffc, type: 3}
   speed: 5
   direction: 0

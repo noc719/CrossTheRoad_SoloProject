@@ -1,7 +1,7 @@
 ﻿
 using UnityEngine;
 
-[CreateAssetMenu(fileName ="PlacementSO",menuName ="ItemData/Placement",order =2)]
+[CreateAssetMenu(fileName ="PlacementSO",menuName ="Item/Placement",order =2)]
 public class PlacementSO : ItemSO
 {
     
