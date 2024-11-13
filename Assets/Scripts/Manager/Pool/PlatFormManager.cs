@@ -16,7 +16,7 @@ public class PlatFormManager : Manager<PlatFormManager>
         SetPool(); // 사용할 플랫폼 생성
 
         SpawnFromPool(0); //시작하는 지점은 항상 초원으로
-        for (int i = 0; i < 30; i++) //초기 지형을 생성해줌
+        for (int i = 0; i < 40; i++) //초기 지형을 생성해줌
         {
             SpawnFromPool(DecidePlatForm());
         }
@@ -52,7 +52,7 @@ public class PlatFormManager : Manager<PlatFormManager>
             for(int i = 0; i <10; i++)
             {
                 GameObject obj = Instantiate(data.platFormSO.prefab, this.transform);
-                obj.SetActive(false);
+                obj.SetActive(false); 
                 queue.Enqueue(obj);
             }
             platformsDict.Add(data.platFormSO.PlacementId, queue);

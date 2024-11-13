@@ -7,7 +7,7 @@ public class CrashObject : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Debug.Log("GameOver");
-            //GameOver
+            GameManager.Instance.GameOver();
         }
     }
 }
