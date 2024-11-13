@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
-public class PoolManager : Manager<PoolManager>
+public class ItemManager : Manager<ItemManager>
 {
     public List<Item> data;
     public Dictionary<int, Queue<GameObject>> Pool;

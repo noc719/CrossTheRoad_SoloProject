@@ -79,8 +79,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startPoint: {fileID: 412144}
   spawnData: {fileID: 1524000316701538464, guid: 39a7e941a64fb034caae3c6c80804ffc, type: 3}
-  spawnDelayMin: 1
-  spawnDelayMax: 4
+  spawnDelayMin: 2
+  spawnDelayMax: 5
   Edirection: 1
   spawnCount: 3
 --- !u!1 &139548
@@ -155,6 +155,7 @@ GameObject:
   m_Component:
   - component: {fileID: 486352}
   - component: {fileID: 6571074}
+  - component: {fileID: 2019747232558633919}
   m_Layer: 0
   m_Name: roadOne
   m_TagString: Untagged
@@ -201,6 +202,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2019747232558633919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 160302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01a5bade93ad8ca49b9dfa562e2b2bde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  platFormSO: {fileID: 11400000, guid: 206311a3cf3c03147abc0bb592790696, type: 2}
 --- !u!1 &181652
 GameObject:
   m_ObjectHideFlags: 0
@@ -247,8 +261,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startPoint: {fileID: 496688}
   spawnData: {fileID: 1524000316701538464, guid: 39a7e941a64fb034caae3c6c80804ffc, type: 3}
-  spawnDelayMin: 1
-  spawnDelayMax: 4
+  spawnDelayMin: 2
+  spawnDelayMax: 5
   Edirection: 0
   spawnCount: 3
 --- !u!1 &198492

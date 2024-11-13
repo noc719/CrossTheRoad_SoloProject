@@ -20,7 +20,7 @@ public class SpawnController : MonoBehaviour
     {
         eDirection =  (EDirection)Random.Range(0, 2); //무작위로 방향을 설정
 
-        switch(eDirection)
+        switch (eDirection)
         {
             case EDirection.left:
                 leftPoint.enabled = true; break;

@@ -664,6 +664,7 @@ GameObject:
   m_Component:
   - component: {fileID: 409302}
   - component: {fileID: 6510842}
+  - component: {fileID: 9101961732651756392}
   m_Layer: 0
   m_Name: railroad
   m_TagString: Untagged
@@ -716,6 +717,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &9101961732651756392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 135800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01a5bade93ad8ca49b9dfa562e2b2bde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  platFormSO: {fileID: 11400000, guid: 6342cd6868b53004f96a8e1858ea9040, type: 2}
 --- !u!1 &143110
 GameObject:
   m_ObjectHideFlags: 0
@@ -1032,10 +1046,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startPoint: {fileID: 407262}
   spawnData: {fileID: 9086970351270796684, guid: e75094eefb6155e4da6b487307f7463c, type: 3}
-  spawnDelayMin: 1
-  spawnDelayMax: 4
+  spawnDelayMin: 4
+  spawnDelayMax: 10
   Edirection: 0
-  spawnCount: 3
+  spawnCount: 1
 --- !u!1 &164764
 GameObject:
   m_ObjectHideFlags: 0
@@ -1542,10 +1556,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startPoint: {fileID: 440820}
   spawnData: {fileID: 9086970351270796684, guid: e75094eefb6155e4da6b487307f7463c, type: 3}
-  spawnDelayMin: 1
-  spawnDelayMax: 4
+  spawnDelayMin: 4
+  spawnDelayMax: 10
   Edirection: 1
-  spawnCount: 3
+  spawnCount: 1
 --- !u!1 &193030
 GameObject:
   m_ObjectHideFlags: 0
