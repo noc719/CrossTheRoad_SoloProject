@@ -776,8 +776,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36294e26107fad74db697a553d5acc5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftPoint: {fileID: 2272330504082105633}
-  rightPoint: {fileID: 7109035183174552363}
+  spawnPoints:
+  - leftPoint: {fileID: 2272330504082105633}
+    rightPoint: {fileID: 7109035183174552363}
 --- !u!1 &143806
 GameObject:
   m_ObjectHideFlags: 0
