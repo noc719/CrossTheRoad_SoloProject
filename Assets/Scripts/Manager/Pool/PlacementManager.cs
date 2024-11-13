@@ -51,6 +51,9 @@ public class PlacementManager : Manager<PlacementManager>
 
     public void ReturnPlacement(int key,  GameObject obj)
     {
+        if (!placementDict.ContainsKey (key)) return;
 
+        obj.SetActive(false);
+        placementDict[key].Enqueue(obj);
     }
 }

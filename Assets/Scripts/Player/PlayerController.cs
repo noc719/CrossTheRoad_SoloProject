@@ -39,7 +39,6 @@ public class PlayerController : MonoBehaviour
                 Move(moveValue); //Fixed Update에 집어넣을 경우 지속적으로 속력을 더하므로 트리거를 두는게 맞는 것 같다.
                 Rotate(moveInput);
                 moveValue = Vector3.zero; //움직이고나서 다시 변수를 초기화
-                Debug.Log("Input종료");
             }
             else 
             {

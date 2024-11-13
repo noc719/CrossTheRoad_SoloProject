@@ -24,7 +24,7 @@ public class SpawnPoint : MonoBehaviour
     public EDirection Edirection = EDirection.left;
     private float direction = 0;
 
-    public int spawnCount = 0; //계획 상 오브젝트풀에서 호출하는 제한을 걸어주려고 하였는데 일단 스폰주기로 임시조치
+    //private List<GameObject> disableObjects;
 
     private void Start()
     {
@@ -47,6 +47,7 @@ public class SpawnPoint : MonoBehaviour
         obj.GetComponent<Movement>().speed = spawnData.objectSO.Speed;
         obj.transform.rotation = obj.transform.rotation * Quaternion.Euler(0, direction, 0);
         obj.transform.position = transform.position;
+        //disableObjects.Add(obj);
     }
 
     private void SetDirection()
@@ -58,6 +59,21 @@ public class SpawnPoint : MonoBehaviour
             case EDirection.right:
                 direction = 180; break;
         }
-        Debug.Log($"방향은 {Edirection}");
     }
+
+    //private void OnDisable()
+    //{
+    //    for (int i = 0; i < disableObjects.Count; i++)
+    //    {
+    //        if (disableObjects[i].TryGetComponent<MovingObjectSO>(out MovingObjectSO movingObject)) //사라질 오브젝트들의 내역을 검사
+    //        {
+    //            PlacementManager.Instance.ReturnPlacement(movingObject.MoveObjectId, disableObjects[i]);
+    //            Debug.Log("탈것 풀 반환");
+    //        }
+    //        else
+    //        {
+    //            Destroy(disableObjects[i]); //만일 키가 없을 땐 파괴
+    //        }
+    //    }
+    //}
 }
