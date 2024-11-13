@@ -30,7 +30,7 @@ public class GameManager : Manager<GameManager>
         UIManager.Instance.gameOverUI.SetActive(true);
     }
 
-    public void Quit()
+    public void Retry()
     {
         SceneManager.LoadScene("MainScene");
     }
